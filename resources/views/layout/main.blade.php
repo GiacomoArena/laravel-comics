@@ -22,7 +22,9 @@
 
     @yield('content')
 
-    @include('partials.footer')
+    @include('partials.info')
+    @include('partials.footer_link')
+    @include('partials.footer_contact')
 
 </body>
 
