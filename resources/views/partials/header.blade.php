@@ -1,3 +1,6 @@
+@php
+    $header_menu = config('menu_links.headerMenu')
+@endphp
 <header>
 
     <div class="container">
@@ -7,12 +10,13 @@
 
         <section class="links">
             <ul>
-                <li>
-                    <a>
-                        ciao
-                    </a>
-
-                </li>
+                @foreach ($header_menu as $item)
+                    <li>
+                        <a href="{{$item['href']}}">
+                            {{$item['menu']}}
+                        </a>
+                    </li>
+                @endforeach
             </ul>
         </section>
     </div>
