@@ -36,3 +36,30 @@
         padding: 15px 60px;
     }
 }
+.props-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: calc(100% /6);
+
+    img{
+        width: 150px;
+        height: 200px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        transition: all 1s;
+    }
+    img:hover{
+        width: 200px;
+        height: 250px;
+        transform: scale(1);
+
+    }
+    h6.comics_font{
+        width: 130px;
+        font-size: .8rem;
+        color: white;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+}
