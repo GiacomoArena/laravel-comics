@@ -11,8 +11,8 @@
         <section class="links">
             <ul>
                 @foreach ($header_menu as $item)
-                    <li>
-                        <a href="{{$item['href']}}">
+                    <li >
+                        <a  href="{{$item['href']}}">
                             {{$item['menu']}}
                         </a>
                     </li>
