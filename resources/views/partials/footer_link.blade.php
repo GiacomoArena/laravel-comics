@@ -31,7 +31,7 @@
             </ul>
         </div>
 
-        <img src="../assets/img/dc-logo-bg.png" alt="logo">
+        <img src="/img/dc-logo-bg.png" alt="logo">
 
 
     </div>

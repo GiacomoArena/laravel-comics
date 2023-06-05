@@ -48,27 +48,27 @@ return[
         [
             'href' => '#',
             'menu' => 'digital comix',
-            'src' => 'buy-comics-digital-comics.png'
+            'src' => '/img/buy-comics-digital-comics.png'
             ],
             [
             'href' => '#',
             'menu' => 'dc merchandise',
-            'src' => 'buy-comics-merchandise.png'
+            'src' => '/img/buy-comics-merchandise.png'
             ],
             [
             'href' => '#',
             'menu' => 'subscription',
-            'src' => 'buy-comics-subscriptions.png'
+            'src' => '/img/buy-comics-subscriptions.png'
             ],
             [
             'href' => '#',
             'menu' => 'comic shop locator',
-            'src' => 'buy-comics-shop-locator.png'
+            'src' => '/img/buy-comics-shop-locator.png'
             ],
             [
             'href' => '#',
             'menu' => 'DC power visa',
-            'src' => 'buy-dc-power-visa.svg'
+            'src' => '/img/buy-dc-power-visa.svg'
             ],
         ],
 
