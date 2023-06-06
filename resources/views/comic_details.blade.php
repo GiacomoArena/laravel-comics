@@ -8,17 +8,19 @@
 
 @section('content')
     <section class="comic">
-        <div class="dividingline">
+        <div class="dividingline mb-5">
             <img class="comic-img " src="{{ $comic['thumb'] }}" alt="">
         </div>
         <div class="container d-flex">
 
-            <div class="description-side">
-                <h2>{{ $comic['title'] }}</h2>
+            <div class="contaner description-side">
+                <h2 class="mb-3">{{ $comic['title'] }}</h2>
 
-                <div class="d-flex">
-                    <span class="d-flex ">
+                <div class="price-bar d-flex mb-3">
+                    <span class="d-flex">
                         US. Price: <h6>{{ $comic['price'] }}</h6>
+                    </span>
+                    <span>
                         AVAILABLE
                     </span>
                     <span>
@@ -28,14 +30,14 @@
                         </select>
                     </span>
                 </div>
-                <span>
+                <span class="my-3 description">
                     <p>{{ $comic['description'] }}</p>
                 </span>
             </div>
 
             <div class="advertisment">
                 <h4>ADVERTISMENT</h4>
-                <img src="/img/adv.jpg" alt="">
+                <img src="/img/advs.jpg" alt="">
             </div>
 
         </div>
@@ -43,44 +45,44 @@
     </section>
 
     <section class="description-comic">
-        <div class="container d-flex ">
+        <div class="container d-flex py-5 pb-5">
             <table class="table ">
                 <thead>
                     <tr>
-                        <th scope="col">First</th>
+                        <th scope="col">Talent</th>
                         <th scope="col"></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Mark</td>
-                        <td>Otto</td>
+                        <td>Art by:</td>
+                        <td class="blue">{{ implode(',', $comic['artists'] )}}</td>
                     </tr>
                     <tr>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
+                        <td >Written by:</td>
+                        <td class="blue">{{ implode(',', $comic['writers'] ) }}</td>
                     </tr>
                 </tbody>
             </table>
             <table class="table ms-3">
                 <thead>
                     <tr>
-                        <th scope="col">First</th>
+                        <th scope="col">Specs</th>
                         <th scope="col"></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Mark</td>
-                        <td>Otto</td>
+                        <td>Series</td>
+                        <td class="blue">{{ $comic['series'] }}</td>
                     </tr>
                     <tr>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
+                        <td>U.S. Price: </td>
+                        <td>{{ $comic['price'] }}</td>
                     </tr>
                     <tr>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
+                        <td>On Sale Date:</td>
+                        <td>{{ $comic['sale_date'] }}</td>
                     </tr>
                 </tbody>
             </table>

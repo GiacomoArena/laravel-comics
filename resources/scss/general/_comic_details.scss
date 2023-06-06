@@ -13,12 +13,46 @@ section.comic {
             bottom: 20px;
         }
     }
+    h2{
+        color: #003F5E;
+        text-transform: uppercase;
+    }
+    .description-side{
+        max-width: 700px;
+        .price-bar{
+            background-color:#55BA59 ;
+            justify-content: space-between;
+            align-items: center;
+            span{
+                justify-content: space-between;
+            }
+        }
+    }
+    .advertisment{
+        text-align: right;
+        margin-left: 30px;
+        h4{
+            color: #55555A;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        img{
+            width: 200px;
+        }
+    }
 }
 
 .description-comic {
     background-color: $grey-description;
     .table,th,td{
+        color: #003F5E;
         background-color: $grey-description!important;
+        .blue{
+            color: $primary-color;
+        }
+        th{
+            font-size: 1.2rem;
+        }
     }
     .link-menu {
         width: calc(100% / 4);
@@ -28,4 +62,5 @@ section.comic {
             filter: invert(.5)
         }
     }
+
 }
