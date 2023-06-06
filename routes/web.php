@@ -18,3 +18,25 @@ Route::get('/', function () {
     return view('home');
 
 })->name('home');
+
+
+
+
+
+Route::get('/comic', function () {
+
+    return view('comic_details');
+
+})->name('comic');
+
+
+
+/*Route::get('/{id}', function ($id) {
+    $comics = config('comics');
+
+    $comicFiltered = array_filter($comics, fn($comic) => $comic['id'] === $id);
+
+    $comic = $comicFiltered[array_key_first($comicFiltered)];
+    return view('comic_details', compact('comic'));
+
+})->name('comic');*/

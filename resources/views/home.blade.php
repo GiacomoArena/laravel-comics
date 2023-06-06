@@ -15,7 +15,9 @@
         @foreach ($comics as $comic)
 
             <div class="props-container">
-                <img src="{{$comic["thumb"]}}" alt="">
+                <a href="{{route('comic', ['id' => $comic['id']])}}">
+                    <img src="{{$comic["thumb"]}}" alt="">
+                </a>
                 <h6 class="comics_font">{{$comic["series"]}}</h6>
             </div>
 
@@ -26,6 +28,7 @@
         </span>
     </div>
 
+    @include('partials.info')
 
 </main>
 @endsection
