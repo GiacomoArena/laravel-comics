@@ -20,7 +20,7 @@
                     <span class="d-flex">
                         US. Price: <h6>{{ $comic['price'] }}</h6>
                     </span>
-                    <span>
+                    <span class="avalaible">
                         AVAILABLE
                     </span>
                     <span>
@@ -74,7 +74,7 @@
                 <tbody>
                     <tr>
                         <td>Series</td>
-                        <td class="blue">{{ $comic['series'] }}</td>
+                        <td class="blue text-uppercase">{{ $comic['series'] }}</td>
                     </tr>
                     <tr>
                         <td>U.S. Price: </td>
